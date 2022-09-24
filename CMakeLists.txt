@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.23)
-project(reduction-example CUDA)
+project(cuda-example-reduction CUDA)
 
 set(CMAKE_CUDA_STANDARD 17)
 
