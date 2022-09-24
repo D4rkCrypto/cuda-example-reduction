@@ -63,7 +63,7 @@ void reduce7() {
     int *d_i_data, *d_o_data;
     int n = 1 << 22;
     int threads = 128;   // initial block size
-    size_t nBlocks = n / threads / 2 + (n % threads == 0 ? 0 : 1);
+    size_t nBlocks = 1 << 13;
     size_t nBytes = n * sizeof(int);
     size_t smemSize = threads * sizeof(int);
 
